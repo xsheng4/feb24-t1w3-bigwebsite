@@ -32,7 +32,6 @@ header {
     height: 10dvh;
     width: 100dvw;
     text-align: center;
-    font-size: x-small;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,11 +39,28 @@ header {
 
 }
 
+
+nav > a {
+    text-decoration: none;
+    background-color: var(--outer-space);
+    color: white;
+    padding: 0.25em;
+    border-radius: 0.5em;
+}
+
+nav > a:hover {
+    background-color: var(--eerie-black);
+}
+
+
 footer {
     background-color: var(--onyx);
     height: 5dvh;
     width: 100dvw;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
@@ -71,4 +87,8 @@ main > img {
 
 main > p {
     font-size: small;
+}
+
+main > h1 {
+    text-align: center;
 }
