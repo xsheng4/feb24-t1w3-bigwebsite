@@ -30,7 +30,7 @@ body {
 header {
     background-color: var(--onyx);
     height: 10dvh;
-    width: 100dvw;
+    width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -79,7 +79,7 @@ main > * {
 
 main > img {
     height: 20dvh;
-    width: 50dvw;
+    width: 50%;
     background-color: var(--eerie-black);
     color: var(--antiflash-white);
     object-fit: cover;

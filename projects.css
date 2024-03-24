@@ -3,9 +3,11 @@
 .Projectpreview > img {
     height: 20dvh;
     border-radius: 2em;
+    max-width: 55dvw;
 }
 
 .Projectpreview {
+    max-width: 60dvw;
     transition: 1s;
     display: flex;
     flex-direction: column;
@@ -28,4 +30,37 @@
 
 .Projectpreview:hover {
     border-radius: 0;
+}
+
+.Projectpreview > section {
+    display: flex;
+    column-gap: 2.5em;
+}
+
+.Projectpreview > section > a {
+    background-color: var(--slate-gray);
+    padding: 0.5em;
+    border-radius: 1em;
+    border: 1px solid blue;
+}
+
+.contentrow {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+/* Desktop view */
+@media screen and (min-width: 600px) {
+    .contentrow {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Projectpreview {
+        width: 30dvw;
+        margin: 1em;
+    }
 }
