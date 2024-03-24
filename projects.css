@@ -1,0 +1,31 @@
+
+
+.Projectpreview > img {
+    height: 20dvh;
+    border-radius: 2em;
+}
+
+.Projectpreview {
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1em;
+    margin: 2em;
+    padding: 1em;
+    background-color: var(--antiflash-white);
+    border-radius: 2em;
+    /* filter: drop-shadow(1em 1em 5px var(--seasalt)); */
+    box-shadow: 1em 1em var(--slate-gray);
+}
+
+.Projectpreview > a {
+    background-color: var(--slate-gray);
+    padding: 0.5em;
+    border-radius: 1em;
+}
+
+.Projectpreview:hover {
+    border-radius: 0;
+}
